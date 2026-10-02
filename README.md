@@ -203,7 +203,7 @@ Reproduce it: [misc/benchmarks/03-latency-vs-throughput](misc/benchmarks/03-late
 
 - [The gem5 Simulator](https://arxiv.org/abs/2007.03152) - Overview of the most widely used performance simulation framework.
 
-- [Catscan: Visualizing Pipelines of CPU Performance Simulation](https://arxiv.org/pdf/2610.02121) - Modern tool for CPU pipeline visualization and debug.
+- [Catscan: Visualizing Pipelines of CPU Performance Simulation](https://arxiv.org/abs/2610.02121) - Modern tool for CPU pipeline visualization and debug.
 
 
 ## 4. Memory hierarchy
