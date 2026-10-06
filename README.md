@@ -188,15 +188,6 @@ Where a design paper, the vendor manual and a measurement disagree about a core,
 - [uops.info](https://uops.info/) - Where each latency, throughput and port entry links to its microbenchmark, so any value can be re-run.
 - [applecpu: Firestorm Overview](https://dougallj.github.io/applecpu/firestorm.html) - Measured per-instruction tables for an Apple AArch64 core, each entry linked to the counter experiment behind it.
 
-### What the manuals leave out
-
-- [Performance Speed Limits](https://travisdowns.github.io/blog/2019/06/11/speed-limits.html) - Sets the method for finding which hard bound binds a loop, testing its cycles against each in turn.
-- [uiCA: Accurate Throughput Prediction of Basic Blocks on Recent Intel Microarchitectures](https://arxiv.org/abs/2107.14210) - Models the predecoder, decoders, micro-op cache and loop buffer closely enough to predict front-end bound loops.
-- [Gathering Intel on Intel AVX-512 Transitions](https://travisdowns.github.io/blog/2020/01/17/avxfreq1.html) - Measures what the vendor leaves untimed in an AVX-512 licence change, a throttled phase then a frequency step.
-- [Hardware Store Elimination](https://travisdowns.github.io/blog/2020/05/13/intel-zero-opt.html) - Finds an undocumented optimisation by its counter signature and bandwidth, and sets the method for what manuals omit.
-
-Reproduce it: [misc/benchmarks/03-latency-vs-throughput](misc/benchmarks/03-latency-vs-throughput/README.md), one dependency chain against eight independent accumulators.
-
 ### Engineering methodologies
 
 - [Performance Verification of the AmpereOne CPU Core](https://arxiv.org/abs/2608.19300) - Describes the modern tools, flows, and methodologies of verifying the performance of a modern CPU core.
@@ -205,6 +196,14 @@ Reproduce it: [misc/benchmarks/03-latency-vs-throughput](misc/benchmarks/03-late
 
 - [Catscan: Visualizing Pipelines of CPU Performance Simulation](https://arxiv.org/abs/2610.02121) - Modern tool for CPU pipeline visualization and debug.
 
+### What the manuals leave out
+
+- [Performance Speed Limits](https://travisdowns.github.io/blog/2019/06/11/speed-limits.html) - Sets the method for finding which hard bound binds a loop, testing its cycles against each in turn.
+- [uiCA: Accurate Throughput Prediction of Basic Blocks on Recent Intel Microarchitectures](https://arxiv.org/abs/2107.14210) - Models the predecoder, decoders, micro-op cache and loop buffer closely enough to predict front-end bound loops.
+- [Gathering Intel on Intel AVX-512 Transitions](https://travisdowns.github.io/blog/2020/01/17/avxfreq1.html) - Measures what the vendor leaves untimed in an AVX-512 licence change, a throttled phase then a frequency step.
+- [Hardware Store Elimination](https://travisdowns.github.io/blog/2020/05/13/intel-zero-opt.html) - Finds an undocumented optimisation by its counter signature and bandwidth, and sets the method for what manuals omit.
+
+Reproduce it: [misc/benchmarks/03-latency-vs-throughput](misc/benchmarks/03-latency-vs-throughput/README.md), one dependency chain against eight independent accumulators.
 
 ## 4. Memory hierarchy
 
